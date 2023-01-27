@@ -1,0 +1,25 @@
+{
+  "name": "js-backend-cubicle-database",
+  "version": "1.0.0",
+  "description": "JS Backend Project with DataBase",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET node_env=production&& node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalin0169/JS-BACKEND-CUBICLE-DATABASE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kalin0169/JS-BACKEND-CUBICLE-DATABASE/issues"
+  },
+  "homepage": "https://github.com/Kalin0169/JS-BACKEND-CUBICLE-DATABASE#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7"
+  }
+}
