@@ -16,8 +16,9 @@ exports.postCreateCube = async (req, res) => {
 };
 
 exports.getDetails = (req, res) => {
-  let cubeId = Number(req.params.cubeId);
 
+  let cubeId = req.params.cubeId;
+  console.log(cubeId);
   if (!cubeId) {
     return res.redirect('/404');
   }
