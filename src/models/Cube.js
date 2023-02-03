@@ -13,7 +13,13 @@ const cubeSchema = new mongoose.Schema({
   imageUrl: {
     type: String,
     required: true,
-    //Add http/https validation
+    // match:/^https?:\\\\/,
+    validate: {
+      validator: function (value) {
+        return value.startsWith('http://' || value.startsWith('https://'));
+      },
+      message: 'URL is invalid!',
+    },
   },
   difficultyLevel: {
     type: Number,
@@ -28,6 +34,10 @@ const cubeSchema = new mongoose.Schema({
     },
   ],
 });
+
+// cubeSchema.path('imageUrl').validate(function (value) {
+//   return value.startsWith('http://' || value.startsWith('https://'));
+// }, 'URL is invalid!');
 
 const Cube = mongoose.model('Cube', cubeSchema);
 
