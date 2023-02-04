@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minLength: [6,'Password is too short!'],
+    minLength: [6, 'Password is too short!'],
   },
 });
 
@@ -19,6 +19,10 @@ userSchema.pre('save', function (next) {
     this.password = hash;
     next();
   });
+});
+
+userSchema.method('validatePassword', function (password) {
+  return bcrypt.compare(password, this.password);
 });
 
 const User = mongoose.model('User', userSchema);
