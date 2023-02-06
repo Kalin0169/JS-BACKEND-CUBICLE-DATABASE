@@ -5,7 +5,7 @@ const jwtCallback = require('jsonwebtoken');
 //   const promise = new Promise(function (resolve, reject) {
 //     jwtCallback.sign(payload, secret, options, (err, token) => {
 //       if (err) {
-//         return reject(err);
+//         return reject(err); 
 //       }
 //       resolve(token);
 //     });
