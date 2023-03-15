@@ -34,7 +34,7 @@ exports.getDetails = async (req, res) => {
   if (!cube) {
     return res.redirect('/404');
   }
-  const isOwner = cube.owner == req.user._id;
+  const isOwner = cube.owner == req.user?._id;
   res.render('cube/details', { cube, isOwner });
 };
 
