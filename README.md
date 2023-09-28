@@ -18,7 +18,7 @@ I use both **The System Errors** and my own **Custom Errors** in my App. **The E
 
 ### Before you start the Application you need to install MongoDB.
 
-## After successful installation of MongoDB you can start the Application.
+### After successful installation of MongoDB you can start the Application.
 
 To use Cubicle App locally, follow these steps:
 
