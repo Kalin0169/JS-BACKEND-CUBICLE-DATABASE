@@ -13,17 +13,12 @@ exports.login = async (username, password) => {
 
   if (!user) {
     throw new AppError('Invalid username!', { user });
-    // throw new Error('Invalid username');
-    // throw { message: 'Invalid username!', data: user };
   }
 
   const isValid = await user.validatePassword(password);
 
   if (!isValid) {
     throw new AppError('Invalid password!');
-    // throw {
-    //   message: 'Invalid password!',
-    // };
   }
 
   const payload = { _id: user._id, username: user.username };
