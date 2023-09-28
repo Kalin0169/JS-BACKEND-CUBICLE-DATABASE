@@ -28,15 +28,12 @@ router.post('/register', async (req, res, next) => {
   const { username, password, repeatPassword } = req.body;
 
   if (password !== repeatPassword) {
-    // return res.redirect('/404');
     return next(new Error(`Password missmatch`));
-    // return res.render('auth/register', { error: 'Password Missmatch!' });
   }
 
   const existingUser = await authService.getUserByUsername(username);
 
   if (existingUser) {
-    // return res.redirect('/404');
     return res.render('auth/register', { error: 'User already exists!' });
   }
 
@@ -44,11 +41,6 @@ router.post('/register', async (req, res, next) => {
     const user = await authService.register(username, password);
     // console.log(user);
   } catch (err) {
-    // console.log(err.errors);
-    // const errorsArr = Object.keys(err.errors).map(
-    //   (key) => err.errors[key].message
-    // );
-    // console.log(errorsArr);
     const errorsArr = parseMongooseError(err);
     return res.render('auth/register', { error: errorsArr[0] });
   }
