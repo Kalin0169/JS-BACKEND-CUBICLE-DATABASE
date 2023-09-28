@@ -3,7 +3,7 @@ const cookieParser = require('cookie-parser');
 
 const routes = require('./routes');
 const config = require('./config');
-// const errorHandler = require('./middlewares/errorHandlerMiddleware');
+const errorHandler = require('./middlewares/errorHandlerMiddleware');
 const authMiddleware = require('./middlewares/authMiddleware');
 const setupViewEngine = require('./config/viewEngine');
 const initDatabase = require('./config/databaseInit');
@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(authMiddleware.authentication);
 app.use(routes);
 //Global ErrorHandler
-// app.use(errorHandler);
+app.use(errorHandler);
 
 initDatabase()
   .then(() =>
