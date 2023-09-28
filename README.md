@@ -14,7 +14,7 @@ I use both the system Errors and custom Errors in my App. The Errors comming fro
 - Bcrypt, Jsonwebtoken, Cookie-Parser
 - HTML & CSS
 
-### Before you start with creating a new project in Angular you need to install MongoDB.
+### Before you start the Application you need to install MongoDB.
 
 ## Installation
 
