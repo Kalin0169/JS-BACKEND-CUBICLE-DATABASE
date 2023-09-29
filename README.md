@@ -20,7 +20,7 @@ I use **The System Errors**, **Mongoose Errors** and my own **Custom Errors** in
 
 ### After successful installation of MongoDB you can start the Application.
 
-To use Cubicle App locally, follow these steps:
+To use **CUBICLE** App locally, follow these steps:
 
 1.  Clone the repository:
 
