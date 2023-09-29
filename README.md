@@ -28,7 +28,7 @@ To use **CUBICLE** App locally, follow these steps:
 
 2.  Navigate to the project directory and run npm install:
 
-- `cd JS-BACKEND-CUBICLE-DATABASE & npm i`
+- `cd JS-BACKEND-CUBICLE-MPA & npm i`
 
 3.  Start the application with npm start.
 
