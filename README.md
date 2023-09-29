@@ -24,7 +24,7 @@ To use **CUBICLE** App locally, follow these steps:
 
 1.  Clone the repository:
 
-- `git clone https://github.com/kalinsky-dev/JS-BACKEND-CUBICLE-DATABASE`
+- `git clone https://github.com/kalinsky-dev/JS-BACKEND-CUBICLE-MPA`
 
 2.  Navigate to the project directory and run npm install:
 
