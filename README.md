@@ -1,6 +1,6 @@
 # JS-BACKEND-CUBICLE
 
-&nbsp; &nbsp; &nbsp; **Cubicle** is a **Backend Multipage Application app** where you can browse some of the most popular **Rubik cubes** in the world and add some new cubes that you have discovered.
+&nbsp; &nbsp; &nbsp; **Cubicle** is a **Backend Multipage Application App** where you can browse some of the most popular **Rubik cubes** in the world and add some new cubes that you have discovered.
 
 &nbsp; &nbsp; &nbsp; Every user can **register**, **login** and **logout**. Each cube can be **edited** or   **deleted**. Some of the functionality require **Authentication** such as (**create a cube**, **create accessory**) and authorization (such as **edit** and **delete**). **Anonymous** (guest) users **can't reach** the functionality which requires authentication, such as creating a cube view. From the other hand, the **already logged-in** users have generated and stored **jwt** and they **can** see the correct navigation as well as they **can't reach** the **login** and **register** form. If some of these scenarios happen, the current user is redirected to the **home page**. Only authorized users can see the **[Edit]** and **[Delete]**, namely if **the currently logged-in user is the Creator of this cube**. 
 
