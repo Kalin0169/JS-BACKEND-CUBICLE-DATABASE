@@ -11,7 +11,7 @@
 I use **The System Errors**, **Mongoose Errors** and my own **Custom Errors** in my App. **The Errors** comming from the **DataBase**, respectivly from the **Mongoose Schema**, are parsed separately. **Some Errors** are to be catched and send to the **Global Error Handler**, as well as using the other **Approach** to **render them at the Corresponding Controller** locally. 
 
 
-### Used technologies
+### Used Technologies & Dependencies
 
 - Express
 - Handlebars
